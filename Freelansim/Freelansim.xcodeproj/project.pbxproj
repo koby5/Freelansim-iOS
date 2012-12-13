@@ -414,10 +414,7 @@
 				8C9E64FD167A33B900A06885 /* images */,
 				8C9E64E6167A33A100A06885 /* AppDelegate.h */,
 				8C9E64E7167A33A100A06885 /* AppDelegate.m */,
-				8C9E64EF167A33A100A06885 /* ViewController.h */,
-				8C9E64F0167A33A100A06885 /* ViewController.m */,
-				8C9E64F2167A33A100A06885 /* ViewController_iPhone.xib */,
-				8C9E64F5167A33A100A06885 /* ViewController_iPad.xib */,
+				8C9E6644167A3C7C00A06885 /* TasksView */,
 				8C9E64DE167A33A100A06885 /* Supporting Files */,
 			);
 			path = Freelansim;
@@ -605,6 +602,17 @@
 				8C9E65A0167A33B900A06885 /* tabbar@2x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		8C9E6644167A3C7C00A06885 /* TasksView */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E64EF167A33A100A06885 /* ViewController.h */,
+				8C9E64F0167A33A100A06885 /* ViewController.m */,
+				8C9E64F2167A33A100A06885 /* ViewController_iPhone.xib */,
+				8C9E64F5167A33A100A06885 /* ViewController_iPad.xib */,
+			);
+			name = TasksView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
