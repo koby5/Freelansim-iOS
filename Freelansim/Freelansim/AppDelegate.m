@@ -67,9 +67,11 @@
     UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar.png"];
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];  
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-active.png"]];
+    
+    [self ConfigureiPhoneTabBar];
 }
 
--(void)configureiPhoneTabBar
+-(void)ConfigureiPhoneTabBar
 {
     UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
 	

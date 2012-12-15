@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
 	
-    self.title = @"Tasks";    
+    self.title = @"Проекты";    
     
     /*UIButton* infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
     [infoButton addTarget:self action:@selector(showInfoView:) forControlEvents:UIControlEventTouchUpInside];
@@ -71,12 +71,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    TaskDetailViewController *detailViewController = [[TaskDetailViewController alloc]
+{    
+    TaskDetailViewController *taskDetailView = [[TaskDetailViewController alloc]
                                                    initWithNibName:@"TaskDetailViewController" bundle:nil];
-    //detailViewController.selectedStudent = [students objectAtIndex:indexPath.row];
-    [self.navigationController pushViewController:detailViewController animated:YES];
-    [detailViewController release];
+    taskDetailView.title = [TasksSource objectAtIndex:indexPath.row];
+    taskDetailView.NameLable.text = [TasksSource objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:taskDetailView animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [taskDetailView release];
 }
 
 @end

@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface TaskDetailViewController : UIViewController
+{
+    NSString *Title;
+}
+
+@property (retain, nonatomic) IBOutlet UITextView *DescriptionView;
+@property (retain, nonatomic) IBOutlet UILabel *DateLabel;
+@property (retain, nonatomic) IBOutlet UILabel *BudgetLable;
+@property (retain, nonatomic) IBOutlet UILabel *NameLable;
+@property (copy) NSString *Title;
 
 @end
