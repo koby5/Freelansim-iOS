@@ -182,6 +182,10 @@
 		8C9E6641167A33B900A06885 /* tabbar-active@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E659E167A33B900A06885 /* tabbar-active@2x.png */; };
 		8C9E6642167A33B900A06885 /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E659F167A33B900A06885 /* tabbar.png */; };
 		8C9E6643167A33B900A06885 /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E65A0167A33B900A06885 /* tabbar@2x.png */; };
+		8C9E6649167A408900A06885 /* TaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E6648167A408900A06885 /* TaskCell.m */; };
+		8C9E664B167A409B00A06885 /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E664A167A409B00A06885 /* TaskCell.xib */; };
+		8C9E664F167C8BF600A06885 /* TaskDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E664D167C8BF600A06885 /* TaskDetailViewController.m */; };
+		8C9E6650167C8BF600A06885 /* TaskDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9E664E167C8BF600A06885 /* TaskDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -365,6 +369,12 @@
 		8C9E659E167A33B900A06885 /* tabbar-active@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar-active@2x.png"; sourceTree = "<group>"; };
 		8C9E659F167A33B900A06885 /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		8C9E65A0167A33B900A06885 /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		8C9E6647167A408900A06885 /* TaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskCell.h; sourceTree = "<group>"; };
+		8C9E6648167A408900A06885 /* TaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskCell.m; sourceTree = "<group>"; };
+		8C9E664A167A409B00A06885 /* TaskCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		8C9E664C167C8BF600A06885 /* TaskDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailViewController.h; sourceTree = "<group>"; };
+		8C9E664D167C8BF600A06885 /* TaskDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailViewController.m; sourceTree = "<group>"; };
+		8C9E664E167C8BF600A06885 /* TaskDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,7 +424,7 @@
 				8C9E64FD167A33B900A06885 /* images */,
 				8C9E64E6167A33A100A06885 /* AppDelegate.h */,
 				8C9E64E7167A33A100A06885 /* AppDelegate.m */,
-				8C9E6644167A3C7C00A06885 /* TasksView */,
+				8C9E6645167A3CE200A06885 /* Views */,
 				8C9E64DE167A33A100A06885 /* Supporting Files */,
 			);
 			path = Freelansim;
@@ -613,6 +623,36 @@
 				8C9E64F5167A33A100A06885 /* ViewController_iPad.xib */,
 			);
 			name = TasksView;
+			sourceTree = "<group>";
+		};
+		8C9E6645167A3CE200A06885 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E6646167A406800A06885 /* TaskCell */,
+				8C9E6644167A3C7C00A06885 /* TasksView */,
+				8C9E6651167C8BFB00A06885 /* TaskDetail */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8C9E6646167A406800A06885 /* TaskCell */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E6647167A408900A06885 /* TaskCell.h */,
+				8C9E6648167A408900A06885 /* TaskCell.m */,
+				8C9E664A167A409B00A06885 /* TaskCell.xib */,
+			);
+			name = TaskCell;
+			sourceTree = "<group>";
+		};
+		8C9E6651167C8BFB00A06885 /* TaskDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E664C167C8BF600A06885 /* TaskDetailViewController.h */,
+				8C9E664D167C8BF600A06885 /* TaskDetailViewController.m */,
+				8C9E664E167C8BF600A06885 /* TaskDetailViewController.xib */,
+			);
+			name = TaskDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -835,6 +875,8 @@
 				8C9E6641167A33B900A06885 /* tabbar-active@2x.png in Resources */,
 				8C9E6642167A33B900A06885 /* tabbar.png in Resources */,
 				8C9E6643167A33B900A06885 /* tabbar@2x.png in Resources */,
+				8C9E664B167A409B00A06885 /* TaskCell.xib in Resources */,
+				8C9E6650167C8BF600A06885 /* TaskDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,6 +890,8 @@
 				8C9E64E4167A33A100A06885 /* main.m in Sources */,
 				8C9E64E8167A33A100A06885 /* AppDelegate.m in Sources */,
 				8C9E64F1167A33A100A06885 /* ViewController.m in Sources */,
+				8C9E6649167A408900A06885 /* TaskCell.m in Sources */,
+				8C9E664F167C8BF600A06885 /* TaskDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -937,6 +981,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Freelansim/Freelansim-Prefix.pch";
 				INFOPLIST_FILE = "Freelansim/Freelansim-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -948,6 +993,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Freelansim/Freelansim-Prefix.pch";
 				INFOPLIST_FILE = "Freelansim/Freelansim-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    NSMutableArray *TasksSource;
+}
+
+@property (retain, nonatomic) IBOutlet UITableView *TasksList;
+@property (retain, nonatomic) NSMutableArray *TasksSource;
 
 @end

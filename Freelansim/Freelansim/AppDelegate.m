@@ -36,6 +36,7 @@
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.viewController];
     self.window.rootViewController = self.navigationController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -66,6 +67,36 @@
     UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar.png"];
     [[UITabBar appearance] setBackgroundImage:tabBarBackground];  
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-active.png"]];
+}
+
+-(void)configureiPhoneTabBar
+{
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+	
+    UIViewController *controller1 = [[tabBarController viewControllers] objectAtIndex:0];
+    [self configureTabBarItemWithImageName:@"tab-icon1.png" andText:@"Elements" forViewController:controller1];
+    
+    
+    UIViewController *controller2 = [[tabBarController viewControllers] objectAtIndex:1];
+    [self configureTabBarItemWithImageName:@"tab-icon2.png" andText:@"Elements" forViewController:controller2];
+    
+    
+    UIViewController *controller3 = [[tabBarController viewControllers] objectAtIndex:2];
+    [self configureTabBarItemWithImageName:@"tab-icon3.png" andText:@"Other" forViewController:controller3];
+    
+    
+    UIViewController *controller4 = [[tabBarController viewControllers] objectAtIndex:3];
+    [self configureTabBarItemWithImageName:@"tab-icon4.png" andText:@"Other" forViewController:controller4];
+    
+}
+
+-(void)configureTabBarItemWithImageName:(NSString*)imageName andText:(NSString *)itemText forViewController:(UIViewController *)viewController
+{
+    UIImage* icon1 = [UIImage imageNamed:imageName];
+    UITabBarItem *item1 = [[UITabBarItem alloc] initWithTitle:itemText image:icon1 tag:0];
+    [item1 setFinishedSelectedImage:icon1 withFinishedUnselectedImage:icon1];
+    
+    [viewController setTabBarItem:item1];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
