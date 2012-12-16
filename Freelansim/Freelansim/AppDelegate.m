@@ -17,6 +17,7 @@
     [_window release];
     [_viewController release];
     [super dealloc];
+    
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -27,6 +28,7 @@
     {
         self.viewController = [[[ViewController alloc] initWithNibName:@"ViewController_iPhone" bundle:nil] autorelease];
         [self customizeiPhoneTheme];
+        NSLog(@"comiit");
     }
     
     else
